@@ -37,7 +37,19 @@
     $ echo "vendor/" > .gitignore
     ```
 
-3. git リポジトリと heroku app を作成，リモートに push する
+3. `index.php`を作成
+
+    ```bash
+    $ touch index.php
+    ```
+
+    ```php
+    <?php
+    echo "Hello World";
+    ?>
+    ```
+
+4. git リポジトリと heroku app を作成，リモートに push する
 
     ```bash
     $ git init
@@ -46,7 +58,7 @@
     $ git push heroku master
     ```
 
-4. `curl`および`heroku open`で heroku app を確認
+5. `curl`および`heroku open`で heroku app を確認
 
     ```bash
     $ curl https://[$APP_NAME].herokuapp.com
